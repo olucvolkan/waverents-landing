@@ -1,6 +1,6 @@
 import React from "react";
 import { ChevronRight } from "lucide-react";
-
+import Image from "next/image";
 const adventures = [
   {
     title: "Supboards",
@@ -33,7 +33,7 @@ export default function AdventureCarousel() {
               key={item.title} 
               className="bg-white rounded-lg p-6 shadow-sm hover:shadow-lg transition-shadow"
             >
-              <img
+              <Image
                 src={item.image}
                 alt={item.title}
                 className="w-full h-40 object-contain mb-4"

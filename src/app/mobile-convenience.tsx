@@ -45,7 +45,7 @@ export function MobileConvenience() {
           >
             Run your rental business from anywhere. Accept bookings, track equipment, 
             and manage payments right from your phone. Stay connected with renters 
-            and keep your business running smoothly, even when you're on the go.
+            and keep your business running smoothly, even when you are on the go.
           </Typography>
 
           <div className="col-span-2 grid gap-5 grid-cols-2 ">

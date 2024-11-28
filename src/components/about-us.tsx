@@ -14,7 +14,7 @@ export default function About() {
               Connecting Water Sports Enthusiasts
             </Typography>
             <Typography variant="lead" className="mb-5 text-gray-600">
-              At WaveRent, we're passionate about making water sports accessible to everyone. 
+              At WaveRent, we are passionate about making water sports accessible to everyone. 
               Our platform connects equipment owners with adventure seekers, creating a 
               community that shares the love for water activities.
             </Typography>
