@@ -53,3 +53,4 @@ waverents-landing/
 ├── package.json
 └── README.md
 ```
+Deployment Url: https://waverents-landing.vercel.app/
