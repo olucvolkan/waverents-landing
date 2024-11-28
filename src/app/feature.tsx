@@ -4,38 +4,38 @@ import React from "react";
 import { Typography } from "@material-tailwind/react";
 
 import {
-  CursorArrowRaysIcon,
-  HeartIcon,
-  LightBulbIcon,
-  LockClosedIcon,
+  BuildingStorefrontIcon as StoreIcon,
+  ArrowUpTrayIcon as UploadIcon,
+  ClipboardDocumentListIcon as ClipboardListIcon,
+  BanknotesIcon,
 } from "@heroicons/react/24/solid";
 
 import FeatureCard from "../components/feature-card";
 
 const FEATURES = [
   {
-    icon: CursorArrowRaysIcon,
-    title: "Expert Instructors",
+    icon: StoreIcon,
+    title: "Create Your Store",
     children:
-      "Learn from the best. Our instructors are industry experts, academics, and seasoned professionals dedicated to helping you.",
+      "Set up your rental business in minutes. Create a personalized store that showcases your adventure equipment and gear.",
   },
   {
-    icon: HeartIcon,
-    title: "Interactive Learning",
+    icon: UploadIcon,
+    title: "Upload Products",
     children:
-      "Engage with interactive quizzes, hands-on exercises, and discussion forums to reinforce your understanding and connect.",
+      "Easily upload and manage your rental products. Add detailed descriptions, high-quality photos, and set competitive pricing.",
   },
   {
-    icon: LockClosedIcon,
-    title: "Achievement Unlocked",
+    icon: ClipboardListIcon,
+    title: "Manage Rentals",
     children:
-      "Earn certificates and badges as you complete courses, showcasing your newfound skills to the world.",
+      "Keep track of all your rentals in one place. Handle bookings, monitor equipment status, and manage customer communications effortlessly.",
   },
   {
-    icon: LightBulbIcon,
-    title: "Personalized Progress Tracking",
+    icon: BanknotesIcon,
+    title: "Track Earnings",
     children:
-      "Stay on top of your learning journey with progress tracking and personalized recommendations to keep you motivated.",
+      "Monitor your business performance with detailed analytics. Track revenue, view rental statistics, and optimize your pricing strategy.",
   },
 ];
 
@@ -43,19 +43,14 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
-          Your Learning App
+        <Typography color="wave-blue" className="mb-2 font-bold uppercase">
+          Start Your Rental Business
         </Typography>
         <Typography variant="h1" color="blue-gray" className="mb-4">
-          Diverse Learning Resources
+          Everything You Need to Succeed
         </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
-        >
-          Access your learning materials on the go. Whether you&apos;re
-          commuting, waiting for a friend, or just have a few minutes to spare,
-          our app fits seamlessly into your busy life.
+        <Typography variant="lead" color="blue-gray" className="lg:px-28">
+          Launch and grow your rental business with our comprehensive platform. We provide all the tools you need to manage your equipment rentals efficiently.
         </Typography>
       </div>
       <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">

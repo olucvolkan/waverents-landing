@@ -1,113 +1,96 @@
 "use client";
 import Image from "next/image";
-import { Typography, IconButton, Button } from "@material-tailwind/react";
+import { Typography, Button } from "@material-tailwind/react";
 
-const LINKS = ["About Us", "Careers", "Press", "Blog", "Pricing"];
 const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer() {
   return (
-    <footer className="mt-10 bg-gray-900 px-8 pt-12">
+    <footer className="mt-10 bg-wave-blue px-8 pt-12 pb-8">
       <div className="container mx-auto">
-        <div className="flex flex-wrap justify-center gap-8 md:justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          {/* Company Info */}
           <div className="text-center md:text-left">
             <Typography
-              as="a"
-              href="https://www.material-tailwind.com"
-              target="_blank"
               variant="h5"
               color="white"
               className="mb-4"
             >
-              Material Tailwind
+              WaveRent
             </Typography>
-            <Typography color="white" className="mb-12 font-normal">
-              The reward for getting on the stage is fame.
+            <Typography color="white" className="font-normal opacity-80 mb-4">
+              Making water sports accessible to everyone through our innovative rental platform.
             </Typography>
-            <ul className="flex flex-wrap items-center justify-center md:justify-start">
-              {LINKS.map((link, idx) => (
-                <li key={link}>
-                  <Typography
-                    as="a"
-                    href="#"
-                    color="white"
-                    className={`py-1 font-medium transition-colors ${
-                      idx === 0 ? "pr-3" : "px-3"
-                    }`}
-                  >
-                    {link}
-                  </Typography>
-                </li>
-              ))}
-            </ul>
+            <Typography
+              as="a"
+              href="/blog"
+              color="white"
+              className="py-1 font-medium transition-colors hover:text-white/80"
+            >
+              Blog
+            </Typography>
           </div>
-          <div className="mt-8 w-full md:mt-0 md:w-auto">
-            <Typography variant="h6" color="white" className="mb-3">
-              Get the app
+
+          {/* Contact Info */}
+          <div id="contact" className="text-center md:text-left scroll-mt-20">
+            <Typography variant="h6" color="white" className="mb-4">
+              Contact Us
+            </Typography>
+            <div className="space-y-2">
+              <Typography color="white" className="font-normal opacity-80">
+                Email: contact@waverent.com
+              </Typography>
+              <Typography color="white" className="font-normal opacity-80">
+                Phone: +1 (555) 123-4567
+              </Typography>
+              <Typography color="white" className="font-normal opacity-80">
+                Address: 123 Ocean Drive,<br />
+                Marina District, CA 94123
+              </Typography>
+            </div>
+          </div>
+
+          {/* Download Apps */}
+          <div className="text-center md:text-left">
+            <Typography variant="h6" color="white" className="mb-4">
+              Get the App
             </Typography>
             <div className="flex flex-col gap-2">
               <Button
-                color="white"
-                className="flex items-center justify-center"
+                size="lg"
+                className="bg-white hover:bg-white/90 flex justify-center items-center gap-3 text-gray-900"
               >
                 <Image
                   width={256}
                   height={256}
                   src="/logos/logo-apple.png"
-                  className="-mt-0.5 mr-2 h-6 w-6"
-                  alt="ios"
+                  alt="app-store"
+                  className="w-6 h-6"
                 />
                 App Store
               </Button>
               <Button
-                color="white"
-                className="flex items-center justify-center"
+                size="lg"
+                className="bg-white hover:bg-white/90 flex justify-center items-center gap-3 text-gray-900"
               >
                 <Image
                   width={256}
                   height={256}
                   src="/logos/logo-google.png"
-                  className="-mt-0.5 mr-2 h-6 w-6"
-                  alt="ios"
+                  alt="google-play"
+                  className="w-6 h-6"
                 />
                 Google Play
               </Button>
             </div>
           </div>
         </div>
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between">
-          <Typography
-            color="white"
-            className="text-center font-normal opacity-75"
-          >
-            &copy; {CURRENT_YEAR} Made with{" "}
-            <a href="https://www.material-tailwind.com" target="_blank">
-              Material Tailwind
-            </a>{" "}
-            by{" "}
-            <a href="https://www.creative-tim.com" target="_blank">
-              Creative Tim
-            </a>
-            .
-          </Typography>
 
-          <div className="flex gap-2">
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-twitter text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-linkedin text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-facebook text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-github text-2xl not-italic opacity-75"></i>
-            </IconButton>
-            <IconButton variant="text" color="white">
-              <i className="fa-brands fa-dribbble text-2xl not-italic opacity-75"></i>
-            </IconButton>
-          </div>
+        {/* Copyright */}
+        <div className="border-t border-white/10 pt-8 text-center">
+          <Typography color="white" className="font-normal opacity-80">
+            &copy; {CURRENT_YEAR} WaveRent. All rights reserved.
+          </Typography>
         </div>
       </div>
     </footer>

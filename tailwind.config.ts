@@ -6,7 +6,17 @@ const config: Config = withMT({
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        'wave-blue': '#25BCE1',
+        'wave-dark': '#1A1A1A',
+      },
+      backgroundImage: {
+        'gradient-wave': 'linear-gradient(45deg, #25BCE1, #1FB5DC)',
+      }
+    },
+  },
   plugins: [],
 });
 

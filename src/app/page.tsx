@@ -8,16 +8,19 @@ import Feature from "./feature";
 import MobileConvenience from "./mobile-convenience";
 import Testimonials from "./testimonials";
 import Faqs from "./faqs";
+import AdventureCarousel from "@/components/carousel";
+import About from "@/components/about-us";
 
 export default function Campaign() {
   return (
     <>
       <Navbar />
       <Hero />
-      <VideoIntro />
+      <About />
+      <AdventureCarousel />
       <Feature />
       <MobileConvenience />
-      <Testimonials />
+ 
       <Faqs />
       <Footer />
     </>
