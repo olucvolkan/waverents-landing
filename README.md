@@ -35,8 +35,8 @@ npm run dev
 yarn dev
 ```
 
-Project Structure
-
+2. Project Structure
+```bash
 waverents-landing/
 ├── public/
 │   ├── image/
@@ -52,3 +52,4 @@ waverents-landing/
 │       └── ...
 ├── package.json
 └── README.md
+```
