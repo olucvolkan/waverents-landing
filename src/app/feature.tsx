@@ -43,13 +43,13 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="wave-blue" className="mb-2 font-bold uppercase">
+        <Typography color="blue" className="mb-2 font-bold uppercase" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           Start Your Rental Business
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography variant="h1" color="blue-gray" className="mb-4"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           Everything You Need to Succeed
         </Typography>
-        <Typography variant="lead" color="blue-gray" className="lg:px-28">
+        <Typography variant="lead" color="blue-gray" className="lg:px-28"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           Launch and grow your rental business with our comprehensive platform. We provide all the tools you need to manage your equipment rentals efficiently.
         </Typography>
       </div>

@@ -36,13 +36,12 @@ export function MobileConvenience() {
           alt="waverents-mobile-app"
         />
         <div className="col-span-1 mx-auto max-w-lg px-4 lg:px-0">
-          <Typography variant="h2" color="white" className="mb-4">
+          <Typography variant="h2" color="white" className="mb-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Manage Your Rentals Anywhere
           </Typography>
           <Typography
             variant="lead"
-            className="mb-5 px-4 text-left text-xl !text-white/90 lg:px-0"
-          >
+            className="mb-5 px-4 text-left text-xl !text-white/90 lg:px-0" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             Run your rental business from anywhere. Accept bookings, track equipment, 
             and manage payments right from your phone. Stay connected with renters 
             and keep your business running smoothly, even when you are on the go.
