@@ -5,17 +5,17 @@ const adventures = [
   {
     title: "Supboards",
     description: "From mid-size to mega yachts, these luxury boats are great for groups and celebrations",
-    image: "image/canoe.avif"
+    image: "/image/canoe.avif"
   },
   {
     title: "Sailboats",
     description: "Set sail with these traditional wind-powered boats",
-    image: "image/canoe.avif"
+    image: "/image/canoe.avif"
   },
   {
     title: "Tours",
     description: "Explore local waters with a boat rental dedicated to sightseeing and exploration",
-    image: "image/canoe.avif"
+    image: "/image/canoe.avif"
   },
 ];
 
@@ -35,6 +35,8 @@ export default function AdventureCarousel() {
             >
               <Image
                 src={item.image}
+                width={256}
+                height={256}
                 alt={item.title}
                 className="w-full h-40 object-contain mb-4"
               />

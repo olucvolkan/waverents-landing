@@ -10,7 +10,7 @@ export default function About() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
           <div className="col-span-1">
-            <Typography variant="h2" color="blue-gray" className="mb-4">
+            <Typography children="About Us" variant="h2" color="blue-gray" className="mb-4">
               Connecting Water Sports Enthusiasts
             </Typography>
             <Typography variant="lead" className="mb-5 text-gray-600">
